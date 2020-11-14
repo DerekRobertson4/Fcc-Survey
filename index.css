@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body {
+    background-color: #4659b9;
+}
+
+header {
+    background-color: white;
+}
+
+#title {
+    /*Formatted off of "Contact Us" header on Contact page */
+    text-align: center;
+    font-size: 48px;
+    line-height: 1.35em;
+    /* Next two lines were originally font: var(--font_6); and color: rgb(var(--color_15)); in original css */
+    font-family: anton,sans-serif;
+    color: rgb(96,96,96);
+}
+
+#description {
+    text-align: center;
+}
+
+#survey-form {
+    background-color: #F2F2F2;
+    margin: auto;
+    max-width: 1000px;
+    padding: 20px;
+    /* need to check out viewport options */
+}
+
+#name-label {
+    padding: 20px;
+}
+
+#email-label {
+    padding: 20px;
+}
+
+#number-label {
+    padding: 20px;
+}
+
+#dropdown-label {
+    padding: 20px;
+}
+
+.rb1 {
+    padding: 20px;
+}
+
+.rb2 {
+    padding: 20px;
+}
+
+.checkbox {
+    padding: 20px;
+}
+
+#comments-label {
+    padding: 20px;
+}
+
+#comments {
+    padding: 5px;
+}
+
+#submit {
+    padding: 10px;
+}
