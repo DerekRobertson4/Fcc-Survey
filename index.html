@@ -1,101 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title> VEM: Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMR Survey</title>
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <div>
         <header>
-            <h1 id="title">VEM Customer Satisfaction Survey</h1>
+            <h1 id="title">DMR Customer Satisfaction Survey</h1>
             <p id="description">
-            We appreciate your time spent answering this survey to improve the quality of our service
+            We appreciate your time spent answering this survey to help us improve the quality and functionality of this site
             </p>
         </header>
     </div>
     <Main>
-    <div>    
+    <br>
+    <div id="main">    
         <form id="survey-form">
-            <div>
-                <label id="name-label" for="name">
-                    Name
-                </label>
-                <input id="name" type="text" name="name" placeholder="Please enter your full name" required>
-            </div>
-            <br>
-            <div>
-                <label id="email-label" for="email">
-                    Email
-                </label>
-                <input id="email" type="email" name="email" placeholder="Enter your email address here" required>
-            </div>
-            <br>    
-            <div>
-                <label id="number-label" for="number">
-                    Number
-                </label>
-                <input id="number" type="number" name="age" min="18" max="110" placeholder="Age" required>
-            </div>
-            <br>
-            <div>
-                <label id="dropdown-label" for="dropdown">
-                    Dropdown
-                </label>
-                <select id="dropdown" name="dropdown">
-                    <option value="">Please choose an option!</option>
-                    <option value="Option1">Option 1</option>
-                    <option value="Option2">Option 2</option>
-                </select>
-            </div>
-            <br>
-            <div class="rb1">Image result for where does myspace tom live
-                Anderson visits many different places around the world and documents his adventure on his Instagram page. He focuses mostly on landscape photos. It's clear that Anderson lives a pretty enviable life. In 2019, he even bought a home in West Hollywood for $3.8 million.Feb 28, 2020
-            <label for="choice3">
-                <input id="choice3" type="radio" name="rb1" value="choice3">Choice 3
-            </label>
-            </div>
-            <br>
-            <div class="rb2">
-                <label for="choice4">
-                    <input id="choice4" type="radio" name="rb2" value="choice1">Choice 1
-                </label>
-                <label for="choice5">
-                    <input id="choice5" type="radio" name="rb2" value="choice2">Choice 2
-                </label>
-                <label for="choice6">
-                    <input id="choice6" type="radio" name="rb2" value="choice3">Choice 3
-                </label>
-            </div>
-            <br>
-            <div class="checkbox">
-                <label for="checkbox1">
-                    <input id="checkbox1" type="checkbox" name="checkboxes" value="checkbox1">Checkbox 1
-                </label>
-                <label for="checkbox2">
-                    <input id="checkbox2" type="checkbox" name="checkboxes" value="checkbox2">Checkbox 2
-                </label>
-                <label for="checkbox3">
-                    <input id="checkbox3" type="checkbox" name="checkboxes" value="checkbox3">Checkbox 3
-                </label>
-                <label for="checkbox4">
-                    <input id="checkbox4" type="checkbox" name="checkboxes" value="checkbox4">Checkbox 4
-                </label>
-            </div>
-            <br>
-            <div>
-                <label id="comments-label" for="comments">
-                    Comments
-                </label>
+             <div class="userinput">
+                    <label id="name-label" for="name">Name</label>
+                    <input id="name" type="text" name="name" placeholder="Please enter your full name" required>
+                </div>
+                <div class="userinput">
+                    <label id="email-label" for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="Enter your email address here" required>
+                </div>
+                <div class="userinput">
+                    <label id="number-label" for="number">Age (optional)</label>
+                    <input id="number" type="number" name="age" min="18" max="110" placeholder="Age">
+                </div>
+                <div class="userinput">
+                    <label id="dropdown-label" for="dropdown">How many years have you been coding for?</label>
+                    <select id="dropdown" name="dropdown" required>
+                        <option value="">Select an option</option>
+                        <option value="Option1">Less than a year</option>
+                        <option value="Option2">1-2 years</option>
+                        <option value="Option3">3-5 years</option>
+                        <option value="Option4">5+ years</option>
+                    </select>
+                </div>
+                <p>Which languages do you <b>have</b> experience in?</p>
+                <div class="checkbox">
+                    <label for="checkC#">
+                        <input id="checkC#" type="checkbox" name="checkboxes" value="checkbox4">C#
+                    </label>
+                    <label for="checkC+">
+                        <input id="checkC+" type="checkbox" name="checkboxes" value="checkbox3">C+
+                    </label>
+                    <label for="checkCSS">
+                        <input id="checkCSS" type="checkbox" name="checkboxes" value="checkbox2">CSS
+                    </label>
+                    <label for="checkJS">
+                        <input id="checkJS" type="checkbox" name="checkboxes" value="checkbox1">Javascript
+                    </label>
+                    <label for="checkPython">
+                        <input id="checkPython" type="checkbox" name="checkboxes" value="checkbox4">Python
+                    </label>
+                    <label for="checkRuby">
+                        <input id="checkRuby" type="checkbox" name="checkboxes" value="checkbox4">Ruby
+                    </label>
+                    
+                </div>
+                <p>Which programming language do you have the <b>most</b> experience in?</p>
+                <div class="radio">
+                    <label for="choiceC#">
+                        <input id="choiceC#" type="radio" name="rb1" value="C#" required>C#
+                    </label>
+                    <label for="choiceC+">
+                        <input id="choiceC+" type="radio" name="rb1" value="C+">C+
+                    </label>
+                        <label for="choiceCSS">
+                    <input id="choiceCSS" type="radio" name="rb1" value="CSS">Cascading Style Sheets
+                        </label>
+                    <label for="choicePython">
+                        <input id="choicePython" type="radio" name="rb1" value="Python">Python
+                    </label>
+                    <label for="choiceRuby">
+                        <input id="choiceRuby" type="radio" name="rb1" value="Ruby">Ruby
+                    </label>
+                    <label for="choiceJS">
+                        <input id="choiceJS" type="radio" name="rb1" value="JS">Javascript
+                    </label>
+                </div>
                 <br>
-                <textarea id="comments" name="comments" rows="5" cols="33">Please tell us how you really feel!
-                </textarea>
+                <div class="comments">
+                    <label id="comments-label" for="comments">
+                    Comments
+                    </label>
+                    <textarea id="comment" name="comment" rows="5" cols="33">Anything you want to tell us? Let us know!
+                    </textarea>
+                </div>
+                <br>
+                <div class="submit-button">
+                    <button id="submit" type="submit">Submit your answers</button>
+                </div>
             </div>
-            <br>
-            <div>
-                <button id="submit" type="submit">Submit your answers</button>
-            </div>
-        </form>
-    </div>    
+        </form>    
+        </div>
+        <br>
     </Main>
 </body>
 </html>
